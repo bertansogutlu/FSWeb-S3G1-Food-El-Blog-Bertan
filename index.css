@@ -43,6 +43,7 @@ line-height: 1.4;
 
 img {
   border-radius: 10px;
+  width: 100%;
  }
 
 .content-row {
@@ -56,7 +57,7 @@ img {
 
 .container {
   /*======= width property yaratın. Değerini 605px olarak atayın */
-  width: 605px;
+  width: 750px;
   margin: 0 auto;
 }
 
@@ -82,6 +83,10 @@ background: white;
   margin-top: 20px;
 */
 
+.content-about-us {
+  margin-top: 20px;
+}
+
 .contact-section {
   border-top: 1px dashed black;
   padding: 20px 0;
@@ -95,6 +100,10 @@ background: white;
 /*======= contact-section class'da address tag'i için aşağdıaki stilleri içeren bir selector yaratın:
    line-height: 2;
 */
+
+.contact-section address {
+  line-height: 2;
+}
 
 footer {
   width: 100%;
@@ -135,4 +144,5 @@ footer nav a:first-child {
 footer .footer-content .copyright {
   padding: 20px 0;
    /*======= metni ortalayacak kodu yazın */
+   text-align: center;
 }
