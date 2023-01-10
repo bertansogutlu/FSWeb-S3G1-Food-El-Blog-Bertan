@@ -1,6 +1,6 @@
 /*======= Font rengini #3C373B yapan bir yeni bir universal selector yaratın*/
 * {
-  color:#3C373B ;
+  color: #3C373B;
 }
 
 h1 {
@@ -11,12 +11,17 @@ h1 {
   text-align: center;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Gaegu', cursive;
   margin-bottom: 0;
   padding: 0 10px;
   /*=======  Font size'ı 30px yapın*/
   font-size: 30px;
+  margin-block-start: 0px;
 }
 
 /*======= Sayfadaki TÜM p tag'leri için aşağıdaki özellikleri içeren bir selector yaratın:
@@ -30,9 +35,10 @@ line-height: 1.4;
 
 p {
   font-size: 16px;
-font-family: roboto;
-padding: 10px;
-line-height: 1.4;
+  font-family: roboto;
+  padding: 10px;
+  line-height: 1.4;
+  margin: 0;
 }
 
 /*======= Sayfadaki TÜM imajlar için aşağıdaki özellikleri içeren bir selector yaratın:
@@ -43,11 +49,23 @@ line-height: 1.4;
 
 img {
   border-radius: 10px;
-  width: 100%;
- }
+  width: 40%;
+}
+
+.banner {
+  text-align: center;
+  padding: 10px;
+}
+
+.banner img {
+  width: 720px;
+}
 
 .content-row {
   display: flex;
+  margin: 10px;
+  margin-top: 40px;
+
 }
 
 .content-row div {
@@ -61,6 +79,10 @@ img {
   margin: 0 auto;
 }
 
+.container header nav {
+  text-align: center;
+}
+
 .container header nav a {
   margin: 0 10px;
   border: 1px solid lightgray;
@@ -70,25 +92,25 @@ img {
   color: white;
   text-decoration: none;
   margin-bottom: 20px;
-   /*======= background property yaratın. Değerini #E79947 olarak atayınız.*/
+  /*======= background property yaratın. Değerini #E79947 olarak atayınız.*/
   background: #E79947;
 }
 
 .container header nav a:hover {
-/*======= background property yaratın ve değeri white olsun.  Sonra, color property yaratın ve değerini yapın. */
-background: white;
+  /*======= background property yaratın ve değeri white olsun.  Sonra, color property yaratın ve değerini yapın. */
+  background: white;
+  color: #3C373B;
 }
 
 /*======= Hakkmızda bölümü için aşağıdaki stilleri içeren bir selector yaratın:
   margin-top: 20px;
 */
 
-.content-about-us {
+.about-us {
   margin-top: 20px;
 }
 
 .contact-section {
-  border-top: 1px dashed black;
   padding: 20px 0;
 }
 
@@ -111,10 +133,10 @@ footer {
   border-top: 1px dashed white;
 }
 
-footer .footer-content { 
-  margin: 0 auto; 
+footer .footer-content {
+  margin: 0 auto;
   /*======= width property yaratın. Değerini 605px olarak atayın */
-  
+  width: 750;
 }
 
 footer .footer-content h3 {
@@ -143,6 +165,6 @@ footer nav a:first-child {
 
 footer .footer-content .copyright {
   padding: 20px 0;
-   /*======= metni ortalayacak kodu yazın */
-   text-align: center;
+  /*======= metni ortalayacak kodu yazın */
+  text-align: center;
 }
